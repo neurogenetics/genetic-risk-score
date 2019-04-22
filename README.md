@@ -11,7 +11,9 @@ https://www.cog-genomics.org/plink/1.9/score
 `plink --bfile $yourfile --score $scorefile --out $outputfilename`
 
 $yourfile = standard binary files .bed .bim .fam
+
 $outputfilename = whatever you want it to be
+
 $scorefile = file with variant-name, allele and score-value:
 
 ~~~~
