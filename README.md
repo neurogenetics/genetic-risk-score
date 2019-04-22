@@ -61,5 +61,8 @@ dev.off()
 thisFormula1 <- formula(paste("PHENO ~ SCOREZ + SEX_COV + AGE + PC1 + PC2 + PC3 + PC4 + PC5"))
 model1 <- glm(thisFormula1, data = data, ,family=binomial)
 print(summary(model1))
+# note sometimes the P-value shows this < 2e-16
+# then use this : summary(model1)$coefficients[,4] 
+# this will output the real P-value
 ~~~~
 
